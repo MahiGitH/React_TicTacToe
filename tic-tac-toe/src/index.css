@@ -1,0 +1,77 @@
+body {
+  
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background-image: url("/tic-tac-toe-game.jpg");
+  background-repeat: no-repeat;
+ background-size: cover;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.board-row {
+  margin-left: 100px;
+}
+
+.board{
+  display: flexbox;
+  justify-self: center;
+  
+}
+
+.squareBorder{
+  width: 300%;
+  height: 100%;
+  border: 10px;
+  padding: 100px;
+}
+
+.status {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: bold;
+  font-weight: 200px;
+}
+.winner {
+  color:red;
+}
+.square {
+  background: #fff;
+  border: 3px solid lightgreenyellow;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: 0px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 50px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  margin-left: 550px;
+}
+
+.game-info {
+  margin-left: 20px;
+}
